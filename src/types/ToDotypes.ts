@@ -9,7 +9,7 @@ export type Filter = 'all' | 'active' | 'completed';
 
 export type ThemeType = 'light' | 'dark';
 
-export interface ToDoContext {
+export interface ToDoContextType {
     todos: ToDo[];
     addTodo: (title: string) => void;
     toggleTodo: (id: string | number) => void;
@@ -18,12 +18,12 @@ export interface ToDoContext {
     clearCompleted: () => void;
 }
 
-export interface FilterContext {
+export interface FilterContextType {
     filter: Filter;
     setFilter: (filter: Filter) => void;
 }
 
-export interface ThemeContext {
+export interface ThemeContextType {
     theme: ThemeType;
     toggleTheme: () => void;
 }
