@@ -49,8 +49,5 @@ export const TodoProvider: React.FC<{ children: React. ReactNode}> = ({children}
             {children}
         </ToDoContext.Provider>
     )
-    
-
-
 }
 
