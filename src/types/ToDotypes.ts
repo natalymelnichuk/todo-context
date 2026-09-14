@@ -27,3 +27,10 @@ export interface ThemeContextType {
     theme: ThemeType;
     toggleTheme: () => void;
 }
+
+export type ToDoAction =
+    | { type: 'ADD_TODO'; payload: string }
+    | { type: 'TOGGLE_TODO'; payload: {id: string | number} }
+    | { type: 'DELETE_TODO'; payload: {id: string | number} }
+    | { type: 'EDIT_TODO'; payload: { id: string | number; newText: string } }
+    | { type: 'CLEAR_COMPLETED' }
